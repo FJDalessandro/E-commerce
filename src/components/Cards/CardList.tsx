@@ -12,7 +12,6 @@ const CardList = async () => {
                     productsToPreLoad.map((product) => (
                         <Link key={product.id} href={`/product/${product.id}`}>
                             <Card {...product} />
-                            <h1>gap</h1>
                         </Link>
                     ))}
             </div>
