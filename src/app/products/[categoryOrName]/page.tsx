@@ -18,7 +18,7 @@ const CategoryOrName = async ({ params }: { params: Promise<{ categoryOrName: st
                     ))
                 ) : (
                     <div className="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer text-black">
-                        <p>No se encontraron productos</p>
+                        <p>No products found</p>
                     </div>
                 )}
             </div>

@@ -27,11 +27,11 @@ const SearchBar = () => {
                 <input
                     value={searchQuery}
                     type="text"
-                    placeholder="Buscar productos..."
+                    placeholder="Search for products..."
                     className="flex-grow py-2 px-3 sm:px-4 text-gray-800 focus:outline-none text-sm sm:text-base text-center"
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <button className="bg-black text-white px-3 sm:px-4 py-2 text-sm font-semibold hover:bg-gray-900 focus:outline-none">Buscar</button>
+                <button className="bg-black text-white px-3 sm:px-4 py-2 text-sm font-semibold hover:bg-gray-900 focus:outline-none">Search</button>
             </form>
         </div>
     );

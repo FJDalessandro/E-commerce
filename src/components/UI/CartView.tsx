@@ -30,7 +30,7 @@ const CartView = () => {
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-8">
-            <h1 className="text-3xl font-bold mb-6">Carrito de compras</h1>
+            <h1 className="text-3xl font-bold mb-6">Cart</h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Lista de productos */}
@@ -46,18 +46,18 @@ const CartView = () => {
                             </div>
                         ))
                     ) : (
-                        <p className="text-gray-500">No tienes ningún producto seleccionado.</p>
+                        <p className="text-gray-500">Add a product.</p>
                     )}
                 </div>
 
                 {/* Resumen de compra */}
                 <div className="p-6 border rounded-xl shadow-md flex flex-col justify-between h-fit">
-                    <h2 className="text-xl font-bold mb-4">Resumen</h2>
+                    <h2 className="text-xl font-bold mb-4">Purchase summary</h2>
                     <p className="text-gray-700 mb-6">
                         Total: <span className="font-semibold">${finalPrice}</span>
                     </p>
                     <button onClick={handleCheckout} className="w-full bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition-colors" disabled={cart.length === 0}>
-                        Comprar
+                        Buy
                     </button>
                 </div>
             </div>

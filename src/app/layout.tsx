@@ -28,9 +28,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased gap-6 p-4 flex flex-col justify-between h-screen`}
-            >
+            <body className={`${geistSans.variable} ${geistMono.variable} antialiased gap-6 flex flex-col justify-between h-screen`}>
                 <AuthProvider>
                     <Navbar />
                     <SearchBar />

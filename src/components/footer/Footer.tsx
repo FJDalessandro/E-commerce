@@ -2,65 +2,61 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div className="w-full bg-gray-100 mt-16 rounded-t-xl">
-            {/* Contenido centrado */}
+        <div className="w-full bg-gray-100 mt-16">
             <footer className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-700">
-                {/* Compañía */}
                 <div>
-                    <h3 className="text-lg font-semibold mb-4">Compañía</h3>
+                    <h3 className="text-lg font-semibold mb-4">Company</h3>
                     <ul className="space-y-2 text-sm">
                         <li>
                             <a href="/about" className="hover:underline">
-                                Acerca de nosotros
+                                About us
                             </a>
                         </li>
                         <li>
                             <a href="/careers" className="hover:underline">
-                                Empleos
+                                Jobs
                             </a>
                         </li>
                         <li>
                             <a href="/press" className="hover:underline">
-                                Prensa
+                                Press
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                {/* Soporte */}
                 <div>
-                    <h3 className="text-lg font-semibold mb-4">Soporte</h3>
+                    <h3 className="text-lg font-semibold mb-4">Support</h3>
                     <ul className="space-y-2 text-sm">
                         <li>
                             <a href="/help" className="hover:underline">
-                                Centro de ayuda
+                                Help
                             </a>
                         </li>
                         <li>
                             <a href="/shipping" className="hover:underline">
-                                Envíos y devoluciones
+                                Shipping and Return Policy
                             </a>
                         </li>
                         <li>
                             <a href="/contact" className="hover:underline">
-                                Contacto
+                                Contact
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                {/* Legal */}
                 <div>
                     <h3 className="text-lg font-semibold mb-4">Legal</h3>
                     <ul className="space-y-2 text-sm">
                         <li>
                             <a href="/terms" className="hover:underline">
-                                Términos y condiciones
+                                Terms and Conditions
                             </a>
                         </li>
                         <li>
                             <a href="/privacy" className="hover:underline">
-                                Política de privacidad
+                                Privacy Policy
                             </a>
                         </li>
                         <li>
@@ -71,9 +67,8 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Redes Sociales */}
                 <div>
-                    <h3 className="text-lg font-semibold mb-4">Síguenos</h3>
+                    <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
                     <ul className="space-y-2 text-sm">
                         <li>
                             <a href="#" className="hover:underline">
@@ -94,11 +89,7 @@ const Footer = () => {
                 </div>
             </footer>
 
-            {/* Línea inferior */}
-            <div className="bg-gray-200 py-4 text-center text-xs text-gray-600">
-                © {new Date().getFullYear()} TuMarca. Todos los derechos
-                reservados.
-            </div>
+            <div className="bg-gray-200 py-4 text-center text-xs text-gray-600">© {new Date().getFullYear()} TechStore. All rights reserved.</div>
         </div>
     );
 };
