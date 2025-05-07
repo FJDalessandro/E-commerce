@@ -33,7 +33,6 @@ const CartView = () => {
             <h1 className="text-3xl font-bold mb-6">Cart</h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                {/* Lista de productos */}
                 <div className="lg:col-span-2 space-y-4">
                     {cart.length ? (
                         cart.map((product) => (
@@ -50,7 +49,6 @@ const CartView = () => {
                     )}
                 </div>
 
-                {/* Resumen de compra */}
                 <div className="p-6 border rounded-xl shadow-md flex flex-col justify-between h-fit">
                     <h2 className="text-xl font-bold mb-4">Purchase summary</h2>
                     <p className="text-gray-700 mb-6">

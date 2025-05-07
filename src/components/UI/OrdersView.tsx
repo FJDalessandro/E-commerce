@@ -33,7 +33,6 @@ const OrdersView = () => {
                                 <p>Status: {order.status}</p>
                             </div>
 
-                            {/* Productos en línea */}
                             <div className="flex flex-wrap gap-4">
                                 {order.products.map((product: IProduct) => (
                                     <div key={product.id} className="w-40 flex-shrink-0 border rounded-lg p-3 shadow-sm bg-gray-50">

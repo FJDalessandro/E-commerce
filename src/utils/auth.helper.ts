@@ -12,7 +12,6 @@ export async function register(userData: IRegister) {
             body: JSON.stringify(userData),
         });
         if (response.ok) {
-            alert("Registro exitoso");
             return response.json();
         } else {
             alert("Error al registrarse");
@@ -33,7 +32,6 @@ export async function login(userData: ILoginForm) {
             body: JSON.stringify(userData),
         });
         if (response.ok) {
-            alert("Login exitoso");
             return response.json();
         } else {
             alert("Error en el login");

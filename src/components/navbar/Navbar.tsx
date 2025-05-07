@@ -9,14 +9,12 @@ const Navbar = () => {
     return (
         <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
             <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-                {/* LOGO */}
                 <div className="flex items-center">
                     <Link href="/" className="text-2xl font-bold tracking-tight text-gray-900">
                         Tech Store
                     </Link>
                 </div>
 
-                {/* CATEGORÍAS */}
                 <div className="hidden md:flex items-center gap-6">
                     <Link href="/products/iphone" className="text-gray-700 text-sm font-semibold hover:text-black transition">
                         Smartphones
@@ -35,7 +33,6 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                {/* BOTONES SESIÓN */}
                 <div className="flex items-center gap-3">
                     {!userData?.token ? (
                         <>

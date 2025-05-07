@@ -1,5 +1,5 @@
 const APIURL = process.env.NEXT_PUBLIC_API_URL;
-import { ICategory, IProduct } from "@/types";
+import { IProduct } from "@/types";
 
 export async function getProducts(): Promise<IProduct[]> {
     try {

@@ -66,7 +66,6 @@ const RegisterView = () => {
                 >
                     {({ errors }) => (
                         <Form className="space-y-5">
-                            {/* Email */}
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
                                 <Field
@@ -78,7 +77,6 @@ const RegisterView = () => {
                                 <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
                             </div>
 
-                            {/* Nombre */}
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                                 <Field
@@ -90,7 +88,6 @@ const RegisterView = () => {
                                 <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-1" />
                             </div>
 
-                            {/* Contraseña */}
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
                                 <Field
@@ -102,7 +99,6 @@ const RegisterView = () => {
                                 <ErrorMessage name="password" component="div" className="text-red-500 text-sm mt-1" />
                             </div>
 
-                            {/* Teléfono */}
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
                                 <Field
@@ -114,7 +110,6 @@ const RegisterView = () => {
                                 <ErrorMessage name="phone" component="div" className="text-red-500 text-sm mt-1" />
                             </div>
 
-                            {/* Dirección */}
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">Address</label>
                                 <Field
@@ -126,7 +121,6 @@ const RegisterView = () => {
                                 <ErrorMessage name="address" component="div" className="text-red-500 text-sm mt-1" />
                             </div>
 
-                            {/* Botón */}
                             <button
                                 type="submit"
                                 disabled={errors.email || errors.password || errors.phone || errors.address || errors.name ? true : false}

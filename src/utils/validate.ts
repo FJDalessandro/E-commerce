@@ -13,9 +13,7 @@ export const ValidateLoginForm = (values: ILoginForm) => {
 
 export const validationSchemaRegister = Yup.object({
     name: Yup.string().required("El nombre es obligatorio"),
-    email: Yup.string()
-        .email("El email no es valido")
-        .required("El email es obligatorio"),
+    email: Yup.string().email("El email no es valido").required("El email es obligatorio"),
     password: Yup.string().required("La contraseña es obligatoria"),
     phone: Yup.string().required("El telefono es obligatorio"),
     address: Yup.string().required("La direccion es obligatoria"),
